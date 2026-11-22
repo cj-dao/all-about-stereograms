@@ -5,10 +5,10 @@ parent: How to Make Your Own
 nav_order: 1
 ---
 
+![]({{ '/assets/images/depth1.png' | relative_url }}){: width="40%" .float-right .ml-4 }
+
 # How to Make Depth Maps
 {: .no_toc }
-
-![]({{ '/assets/images/depth1.png' | relative_url }}){: width="20%" .float-right .ml-4 }
 
 ## Table of Contents
 {: .no_toc .text-delta }
@@ -17,6 +17,5 @@ nav_order: 1
 {:toc}
 
 ## 3D Modeling
-{: style="clear: both;" }
 
 ### Software
