@@ -62,5 +62,5 @@ Export the image using `F12` or by pressing `Render` > `Render Image`.
 
 The clarity of the final stereogram depends a lot on the composition of the depth map. Generally, you want a simple object that can be recognized by its silhouette alone; objects with a lot of thin spikes or fine detail will probably not produce clear results.
 
-Additionally, try to avoid overlapping objects, especially when one object is much closer to the camera; because of the way stereogram algorithms displace patterns to create depth, overlapping depth planes can create pattern "gaps." See [Advanced Techniques]({% link docs/advanced.md %}) for more details.
+Additionally, try to avoid overlapping objects, especially when one object is much closer to the camera; because of the way stereogram algorithms displace patterns to create depth, overlapping depth planes can create pattern "gaps." See [Advanced Techniques]({% link docs/tutorial/advanced.md %}) for more details.
 
