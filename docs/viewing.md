@@ -1,4 +1,5 @@
 ---
+layout: default
 title: How to View
 nav_order: 2
 ---
