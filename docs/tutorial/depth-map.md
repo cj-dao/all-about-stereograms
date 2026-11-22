@@ -64,5 +64,3 @@ The clarity of the final stereogram depends a lot on the composition of the dept
 
 Additionally, try to avoid overlapping objects, especially when one object is much closer to the camera; because of the way stereogram algorithms displace patterns to create depth, overlapping depth planes can create pattern "gaps." See [Advanced Techniques]({% link docs/advanced.md %}) for more details.
 
-
-
