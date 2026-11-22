@@ -4,6 +4,8 @@ title: How to View
 nav_order: 2
 ---
 
+![]({{ '/assets/images/stereo6.png' | relative_url }})
+
 # How to View Stereograms
 
 Instead of looking _at_ the image, look _through_ the image, as if you were looking through a window at the landscape outside. Contrary to some, most stereograms don't need you to cross your eyes, but rather do the opposite—unfocus your eyes so that they look _behind_ the stereogram.
