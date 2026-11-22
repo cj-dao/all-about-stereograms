@@ -4,7 +4,7 @@ layout: home
 nav_order: 1
 ---
 
-![](../../assets/images/stereo4.png)
+![]({{ '/assets/images/stereo4.png' | relative_url }})
 
 # All About Stereograms
 
