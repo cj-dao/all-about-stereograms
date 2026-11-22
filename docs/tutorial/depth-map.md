@@ -26,6 +26,10 @@ Unfortunately, 3D modeling can have a somewhat steep learning curve. You can fin
 
 I use [Blender](https://www.blender.org/) to make my depth maps; it's free, open source, and has hundreds of thousands of tutorials on YouTube.
 
-It's also what the rest of this tutorial is based on, including a template file and node setup so you can simply copy the file, import your 3D model, and export a depth map. Download the following .blend file to follow along with the rest of this tutorial:
+It's also what the rest of this tutorial is based on, including a template file and node setup so you can simply download the file, import your 3D model, and export a depth map.
 
-[Download Template .blend File](https://google.com){: .btn }
+<a href="{{ '/assets/other/depth_tutorial_1.blend' | relative_url }}" class="btn btn-primary" download>Download .blend File</a>
+
+### Setup
+
+
