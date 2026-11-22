@@ -8,7 +8,7 @@ nav_order: 1
 # How to Make Depth Maps
 {: .no_toc }
 
-![]({{ '/assets/images/depth1.png' | relative_url }}){: .float-right .ml-4 .mb-2}
+<img src="{{ '/assets/images/depth1.png' | relative_url }}" alt="Depth map preview" class="float-end ml-4 mb-2" style="max-width: 35%; height: auto;">
 
 ## Table of Contents
 {: .no_toc .text-delta }
@@ -17,5 +17,6 @@ nav_order: 1
 {:toc}
 
 ## 3D Modeling
+{: style="clear: both;" }
 
 ### Software
