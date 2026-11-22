@@ -1,6 +1,6 @@
 ---
 title: How to View
-nav_order: 1
+nav_order: 2
 ---
 
 # How to View Stereograms
