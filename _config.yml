@@ -5,3 +5,7 @@ theme: just-the-docs
 url: https://cj-dao.github.io/all-about-stereograms/
 
 color_scheme: dark_custom
+
+aux_links:
+  Create Your Own Stereogram:
+    - https://mapped-stereogram-maker.web.app/
