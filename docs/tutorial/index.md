@@ -4,6 +4,8 @@ title: How to Make Your Own
 nav_order: 3
 ---
 
+![]({{ '/assets/images/diagram1.png' | relative_url }})
+
 # How to Make Your Own
 {: .no_toc }
 
