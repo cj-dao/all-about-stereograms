@@ -6,7 +6,7 @@ nav_order: 1
 ---
 
 # How to Make Depth Maps
-{ .no_toc }
+{: .no_toc }
 
 ## Table of Contents
 {: .no_toc .text-delta }
