@@ -29,3 +29,4 @@ If the previous method doesn't work, or if the stereogram is on a matte surface 
 
 ### Give it a try:
 
+![]({{ '/assets/images/stereo1.png' | relative_url }})
