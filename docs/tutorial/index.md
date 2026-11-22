@@ -5,7 +5,7 @@ nav_order: 3
 ---
 
 # How to Make Your Own
-{ .no_toc }
+{: .no_toc }
 
 Making your own stereogram requires at least three things:
 * **Depth map**: a grayscale image that determines the 3D depth in the stereogram. White = closer, black = farther.  
