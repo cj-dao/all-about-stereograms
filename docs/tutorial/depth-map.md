@@ -26,13 +26,13 @@ Unfortunately, 3D modeling can have a somewhat steep learning curve. You can fin
 
 I use [Blender](https://www.blender.org/) to make my depth maps; it's free, open source, and has hundreds of beginner tutorials on YouTube, such as [this one](https://www.youtube.com/watch?v=peSv5IT5Ve4).
 
-It's also what the rest of this tutorial is based on, including a template file and node setup so you can simply download the file, import your 3D model, and export a depth map.
+You can download this template Blender file that already has the correct settings to render depth maps.
 
-<a href="{{ '/assets/other/depth_tutorial_1.blend' | relative_url }}" class="btn btn-primary" download>Download .blend File</a>
+<a href="{{ '/assets/other/depth_tutorial_1.blend' | relative_url }}" class="btn btn-primary" download>Download .blend Template</a>
 
 ### Importing files
 
-If you want to avoid modeling your own depth maps, you can find many free models available on sites like [Sketchfab](https://sketchfab.com). Once downloaded, you can import them into Blender with `File > Import`.
+If you want to avoid modeling your own depth maps, you can find many free models available on sites like [Sketchfab](https://sketchfab.com). Once downloaded and unzipped, you can import them into the template Blender file with `File > Import`.
 
 ### Setup
 
@@ -42,10 +42,9 @@ If you already have some experience in Blender and want to integrate this into y
 
 These nodes take the raw, linear depth output and transform it into an inverse curve mapped to the camera's clip start/end, allowing you to render depth maps with perspective _and_ preserve the depth accuracy. Other setups require an orthographic perspective.
 
-![]({{ '/assets/images/diagram4.png' | relative_url }}){: width="20%" .float-right .ml-4 }
-
 {: .note }
-For proper color formatting and best depth fidelity, ensure you have the proper output settings.
+For proper color formatting and best depth fidelity, ensure you have the proper output settings:
+![]({{ '/assets/images/diagram4.png' | relative_url }}){: width="20%" }
 
 ### Adjustment
 
@@ -58,4 +57,12 @@ To make sure that your 3D scene fits within the depth range (i.e. the closest ob
 ### Exporting
 
 Export the image using `F12` or by pressing `Render` > `Render Image`.
+
+## General Tips
+
+The clarity of the final stereogram depends a lot on the composition of the depth map. Generally, you want a simple object that can be recognized by its silhouette alone; objects with a lot of thin spikes or fine detail will probably not produce clear results.
+
+Additionally, try to avoid overlapping objects, especially when one object is much closer to the camera; because of the way stereogram algorithms displace patterns to create depth, overlapping depth planes can create pattern "gaps." See [Advanced Techniques]({% link docs/advanced.md %}) for more details.
+
+
 
