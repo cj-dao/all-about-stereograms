@@ -8,6 +8,8 @@ nav_order: 2
 # How to Make a Texture
 {: .no_toc }
 
+![]({{ '/assets/images/tutorial_frog_texture.png' | relative_url }}){: width="55%" .float-right .ml-4 }
+
 ## Table of Contents
 {: .no_toc .text-delta }
 
