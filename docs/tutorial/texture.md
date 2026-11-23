@@ -16,9 +16,9 @@ nav_order: 2
 1. TOC
 {:toc}
 
-How you make a texture depends on whether you want a [classic or mapped-texture stereogram]({% link index.md %}#classic-unmapped-vs-mapped-texture-stereograms-mts). 
+How you make a texture depends on whether you want a [classic or mapped-texture stereogram]({% link index.md %}#classic-unmapped-vs-mapped-texture-stereograms-mts). If you want to make a classic stereogram, you can skip straight to choosing a [background tile](#background-tile).
 
-Additionally, if you are making an MTS, I recommend that you make at least two textures: one for the object, and one for the background tile.
+If you are making an MTS, I recommend that you make at least two textures: one for the object, and one for the background.
 
 ## Software
 
@@ -26,6 +26,12 @@ Additionally, if you are making an MTS, I recommend that you make at least two t
 
 ### Handling Texture Overlapping
 
+### Subtle Textures
+
 ### Outlines
 
 ## Background Tile
+
+For an MTS, if your texture has transparency, you will probably want a background pattern that will sit behind your primary texture and fill in the gaps and empty space.
+
+If you're making a classic, unmapped stereogram, this background tile will form the texture of your entire stereogram, including both foreground and background. 
