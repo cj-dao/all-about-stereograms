@@ -7,6 +7,14 @@ baseurl: "/all-about-stereograms"
 
 color_scheme: dark_custom
 
+callouts:
+  note:
+    title: Note
+    color: green
+  important:
+    title: Important
+    color: yellow
+
 aux_links:
   Create Your Own Stereogram:
     - https://mapped-stereogram-maker.web.app/
