@@ -29,6 +29,14 @@ If the previous method doesn't work, or if the stereogram is on a matte surface 
 1. Bring the stereogram up close to your nose until you begin to lose focus. Allow your eyes to relax for a bit.
 2. Then, slowly pull the stereogram away again. Try not to refocus on the image; instead, continue to relax and "space out."
 
+---
+
+If none of these methods work, 3Dimka lists several more methods on [hidden-3d](https://hidden-3d.com/how_to_view_stereogram.php).
+
+---
+
 ### Give it a try:
+
+
 
 ![]({{ '/assets/images/stereo1.png' | relative_url }})
