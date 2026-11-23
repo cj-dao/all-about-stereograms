@@ -46,9 +46,8 @@ If you already have some experience in Blender and want to integrate this into y
 
 These nodes take the raw, linear depth output and transform it into an inverse curve mapped to the camera's clip start/end, allowing you to render depth maps with perspective _and_ preserve the depth accuracy. Other setups require an orthographic perspective.
 
-{: .note }
 For proper color formatting and best depth fidelity, ensure you have the proper output settings:
-![]({{ '/assets/images/diagram4.png' | relative_url }}){: width="20%" }
+![]({{ '/assets/images/diagram4.png' | relative_url }}){: width="20%" .ml-4 }
 
 ### Adjustment
 
