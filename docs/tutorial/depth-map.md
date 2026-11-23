@@ -31,6 +31,9 @@ You can download this template Blender file that already has the correct setting
 <a href="{{ '/assets/other/depth_tutorial_1.blend' | relative_url }}" class="btn btn-primary" download>Download .blend Template</a> <br>
 <a href="{{ '/assets/other/depth_tutorial_2.blend' | relative_url }}" class="btn btn-green" download>Download Frog Demo</a>
 
+{: .note }
+If you're using the Frog Demo file, you can skip straight to the [Exporting](#Exporting) step.
+
 ### Importing files
 
 If you want to avoid modeling your own depth maps, you can find many free models available on sites like [Sketchfab](https://sketchfab.com). Once downloaded and unzipped, you can import them into the template Blender file with `File > Import`.
@@ -57,7 +60,8 @@ To make sure that your 3D scene fits within the depth range (i.e. the closest ob
 
 ### Exporting
 
-Export the image using `F12` or by pressing `Render` > `Render Image`.
+* Confirm your depth map looks good by by pressing `Z` then `R`.
+* Export the image using `F12` or by pressing `Render` > `Render Image`.
 
 ## General Tips
 
