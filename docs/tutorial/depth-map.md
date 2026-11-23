@@ -29,7 +29,7 @@ I use [Blender](https://www.blender.org/) to make my depth maps; it's free, open
 You can download this template Blender file that already has the correct settings to render depth maps. Or, you can download the 2nd file, which contains a ready-to-use demo for rendering a depth map as well as a matching texture.
 
 <a href="{{ '/assets/other/depth_tutorial_1.blend' | relative_url }}" class="btn btn-primary" download>Download .blend Template</a> <br>
-<a href="{{ '/assets/other/depth_tutorial_2.blend' | relative_url }}" class="btn" download>Download Frog Demo</a>
+<a href="{{ '/assets/other/depth_tutorial_2.blend' | relative_url }}" class="btn btn-green" download>Download Frog Demo</a>
 
 ### Importing files
 
