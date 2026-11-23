@@ -16,6 +16,8 @@ nav_order: 1
 1. TOC
 {:toc}
 
+A depth map is a black-and-white image that determines the 3D shape of a stereogram: white parts are the closest, black is the farthest. In this example depth map, a frog sits on top of a cube on a floor that recedes into the distance.
+
 ## 3D Modeling
 
 Depth maps rely on highly precise grayscale values; as such, the best way to create them is with 3D modeling software. Creating gradients in Photoshop or using AI to make depth maps directly will probably result in wonky-looking final results.
