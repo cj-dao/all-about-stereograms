@@ -14,4 +14,6 @@ Everything you need to know about stereograms, also known as "Magic Eye" images 
 
 ## What are Stereograms?
 
+## Classic (Unmapped) vs Mapped-Texture Stereograms (MTS)
+
 ### The History of Stereograms
