@@ -32,7 +32,7 @@ You can download this template Blender file that already has the correct setting
 <a href="{{ '/assets/other/depth_tutorial_2.blend' | relative_url }}" class="btn btn-green" download>Download Frog Demo</a>
 
 {: .note }
-If you're using the Frog Demo file, you can skip straight to the [Exporting](#Exporting) step.
+If you're using the Frog Demo file, you can skip straight to the [Exporting](#exporting) step.
 
 ### Importing files
 
