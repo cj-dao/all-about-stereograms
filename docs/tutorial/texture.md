@@ -18,12 +18,12 @@ How you make a texture depends on whether you want a [classic or mapped-texture 
 
 Additionally, if you are making an MTS, I recommend that you make at least two textures: one for the object, and one for the background tile.
 
-### Software
+## Software
 
-### Foreground Texture
+## Foreground Texture
 
-#### Handling Texture Overlapping
+### Handling Texture Overlapping
 
-#### Outlines
+### Outlines
 
-### Background Tile
+## Background Tile
