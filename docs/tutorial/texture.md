@@ -30,9 +30,11 @@ Any art software, Photoshop-like tool, MS Paint, or even a photo of your neighbo
 
 ![]({{ '/assets/images/gif1.gif' | relative_url }}){: width="40%" .float-right .mr-4 }
 
-There's technically no difference between a foreground vs. background texture, and you can use a single image for both. However, especially for mapped-texture stereograms, it's advisable to make the foreground a different pattern from the background to make it stand out more. The best textures are transparent PNG images that align with your depth map. For example, the Frog Demo depth map and texture sit perfectly on top of one another, and the background of the frog is transparent.
+There's technically no difference between a foreground vs. background texture, and you can use a single image for both. However, especially for mapped-texture stereograms, it's advisable to make the foreground a different pattern from the background to make it stand out more. Additionally, because textures will overlap with themselves (see [theory]({% link theory.md %})), textures should involve only small parts of the image and not span the entire width of the stereogram.
 
-The [template](% link depth-map.md %}#software) files I provided have built-in functionality to convert whatever 3D model you're using into a color-rendered image, provided that the model includes its own textures. 
+The best textures are transparent PNG images that align with your depth map. For example, the Frog Demo depth map and texture sit perfectly on top of one another, and the background of the frog is transparent.
+
+The [template]({% link depth-map.md %}#software) files I provided have built-in functionality to convert whatever 3D model you're using into a color-rendered image, provided that the model includes its own textures. 
 
 ![]({{ '/assets/images/diagram6.png' | relative_url }}){: width="20%" .float-left .mr-4 .mb-6 }
 
