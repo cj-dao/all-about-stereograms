@@ -1,0 +1,74 @@
+<style>
+  .external-link-icon {
+    display: inline-block;
+    width: 0.75em;
+    height: 0.75em;
+    margin-left: 0.25em;
+    vertical-align: baseline;
+    opacity: 0.75;
+  }
+
+  .external-link-sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>
+
+<script>
+  (function () {
+    function markExternalLinks() {
+      const contentLinks = document.querySelectorAll(
+        "#main-content a[href], .main-content a[href]"
+      );
+
+      contentLinks.forEach((link) => {
+        const isHttp = link.protocol === "http:" || link.protocol === "https:";
+        const isExternal = isHttp && link.hostname !== window.location.hostname;
+
+        if (isExternal && !link.dataset.externalProcessed) {
+            link.dataset.externalProcessed = "true";
+          link.target = "_blank";
+          const relTokens = new Set(
+            (link.getAttribute("rel") || "").split(/\s+/).filter(Boolean)
+          );
+          relTokens.add("noopener");
+          relTokens.add("noreferrer");
+          link.setAttribute("rel", Array.from(relTokens).join(" "));
+
+            const hasText = link.textContent.trim().length > 0;
+          const hasImageOnly = link.querySelector("img, svg") && !hasText;
+
+          if (hasText && !hasImageOnly) {
+            const srText = document.createElement("span");
+            srText.className = "external-link-sr";
+            srText.textContent = " (opens in a new tab)";
+
+            const icon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+            icon.setAttribute("class", "external-link-icon");
+            icon.setAttribute("viewBox", "0 0 12 12");
+            icon.setAttribute("aria-hidden", "true");
+            icon.innerHTML =
+              '<path fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" d="M3.5 3H9v5.5M9 3L3 9"/>';
+
+            link.appendChild(srText);
+            link.appendChild(icon);
+          }
+
+        }
+      });
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", markExternalLinks);
+    } else {
+      markExternalLinks();
+    }
+  })();
+</script>

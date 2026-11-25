@@ -28,7 +28,7 @@ Any art software, Photoshop-like tool, MS Paint, or even a photo of your neighbo
 
 ## Foreground Texture
 
-![]({{ '/assets/images/gif1.gif' | relative_url }}){: width="40%" .float-right .mr-4 }
+![]({{ '/assets/images/gif1.gif' | relative_url }}){: width="40%" .float-right .ml-4 }
 
 There's technically no difference between a foreground vs. background texture, and you can use a single image for both. However, especially for mapped-texture stereograms, it's advisable to make the foreground a different pattern from the background to make it stand out more. Additionally, because textures will overlap with themselves (see [theory]({% link docs/theory.md %})), textures should involve only small parts of the image and not span the entire width of the stereogram.
 
@@ -55,6 +55,11 @@ As you can see, I've replaced the shape of the frog with a green paisley pattern
 ### Outlines
 
 One popular way many stereogram artists subtly make their object stand out more from the background without making it too obvious is by using outlines. If you look closely, you can see that I've added a slight green outline to the frog.
+
+{: .tip}
+>Due to tile overlap, I recommend that you create a separate texture with *only* an outline, use this to create an outline stereogram, and layer the outline stereogram on top of the base stereogram. See [Advanced Techniques]({% link docs/tutorial/advanced.md %}#layering) for more details.
+>
+> Alternately, you can use the [Generate Outlines]({% link docs/tutorial/software.md %}#outlines) option in [MTS Creator](https://mapped-stereogram-maker.web.app/).
 
 ## Background Tile
 
