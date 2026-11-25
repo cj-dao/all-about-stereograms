@@ -24,7 +24,20 @@ If you are making an MTS, I recommend that you make at least two textures: one f
 
 ## Software
 
+Any art software, Photoshop-like tool, MS Paint, or even a photo of your neighbor's dog can be used to make a texture. I use [Affinity](https://www.affinity.studio/download) and Blender together to design textures, or browse stock photos from the internet; anything works.
+
 ## Foreground Texture
+
+![]({{ '/assets/images/gif1.gif' | relative_url }}){: width="40%" .float-right .mr-4 }
+
+There's technically no difference between a foreground vs. background texture, and you can use a single image for both. However, especially for mapped-texture stereograms, it's advisable to make the foreground a different pattern from the background to make it stand out more. The best textures are transparent PNG images that align with your depth map. For example, the Frog Demo depth map and texture sit perfectly on top of one another, and the background of the frog is transparent.
+
+The [template](% link depth-map.md}#software) files I provided have built-in functionality to convert whatever 3D model you're using into a color-rendered image, provided that the model includes its own textures. 
+
+![]({{ '/assets/images/diagram6.png' | relative_url }}){: width="30%" .float-left .mr-4 }
+
+{: .note }
+If you're following along with the Frog Demo, un-toggle the `Switch` checkbox in the `Nodes` window at the bottom of the screen, press `Z` then `R` to preview the full-color textured render, then use `F12` to render the texture. You should get an image similar to the example one at the top of this page.
 
 ### Handling Texture Overlapping
 
