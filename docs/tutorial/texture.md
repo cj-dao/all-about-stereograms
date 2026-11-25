@@ -34,7 +34,7 @@ There's technically no difference between a foreground vs. background texture, a
 
 The [template](% link depth-map.md %}#software) files I provided have built-in functionality to convert whatever 3D model you're using into a color-rendered image, provided that the model includes its own textures. 
 
-![]({{ '/assets/images/diagram6.png' | relative_url }}){: width="20%" .float-left .mr-4 .mb-6 }
+![]({{ '/assets/images/diagram6.png' | relative_url }}){: width="20%" .float-left .mr-4 .mb-6 .ml-4 .mt-4 }
 
 {: .note }
 If you're following along with the Frog Demo, un-toggle the `Switch` checkbox in the `Nodes` window at the bottom of the screen, press `Z` then `R` to preview the full-color textured render, then use `F12` to render the texture. You should get an image similar to the example one at the top of this page.
