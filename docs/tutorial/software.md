@@ -5,10 +5,10 @@ parent: How to Make Your Own
 nav_order: 3
 ---
 
+![]({{ '/assets/images/mts-website-icon.png' | relative_url }}){: width="40%" .float-right .ml-4 }
+
 # Stereogram Software
 {: .no_toc }
-
-![]({{ '/assets/images/mts-website-icon.png' | relative_url }}){: width="40%" .float-right .ml-4 }
 
 ## Table of Contents
 {: .no_toc .text-delta }

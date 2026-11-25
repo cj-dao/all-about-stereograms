@@ -1,0 +1,46 @@
+{% if page.parent %}
+  {% assign siblings = site.pages 
+    | where: "parent", page.parent 
+    | where: "grand_parent", page.grand_parent 
+    | where_exp: "item", "item.nav_exclude != true" 
+    | sort: "nav_order" %}
+
+  {% assign prev_page = nil %}
+  {% assign next_page = nil %}
+
+  {% for sibling in siblings %}
+    {% if sibling.url == page.url %}
+      {% assign prev_index = forloop.index0 | minus: 1 %}
+      {% assign next_index = forloop.index0 | plus: 1 %}
+
+      {% if prev_index >= 0 %}
+        {% assign prev_page = siblings[prev_index] %}
+      {% endif %}
+
+      {% if next_index < siblings.size %}
+        {% assign next_page = siblings[next_index] %}
+      {% endif %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+  {% if prev_page or next_page %}
+    <nav aria-label="Sibling page navigation" class="sibling-nav">
+      <div class="sibling-nav-prev">
+        {% if prev_page %}
+          <a href="{{ prev_page.url | relative_url }}">
+            &larr; Previous: {{ prev_page.title }}
+          </a>
+        {% endif %}
+      </div>
+      <div class="sibling-nav-next">
+        {% if next_page %}
+          <a href="{{ next_page.url | relative_url }}">
+            Next: {{ next_page.title }} &rarr;
+          </a>
+        {% endif %}
+      </div>
+    </nav>
+    <hr>
+  {% endif %}
+{% endif %}

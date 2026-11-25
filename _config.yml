@@ -7,6 +7,8 @@ baseurl: "/all-about-stereograms"
 
 color_scheme: dark_custom
 
+favicon_ico: "/assets/images/favicon.ico"
+
 callouts:
   note:
     title: Note
@@ -19,5 +21,12 @@ callouts:
     color: yellow
 
 aux_links:
-  Create Your Own Stereogram:
+  MTS Creator:
     - https://mapped-stereogram-maker.web.app/
+
+aux_links_new_tab: true
+
+nav_external_links:
+  - title: MTS Creator
+    url: https://mapped-stereogram-maker.web.app/
+    opens_in_new_tab: true

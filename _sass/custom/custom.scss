@@ -12,3 +12,22 @@ p.new,
 blockquote.new {
   display: flow-root;
 }
+
+.sibling-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+
+  .sibling-nav-prev {
+    text-align: left;
+  }
+
+  .sibling-nav-next {
+    text-align: right;
+    margin-left: auto;
+  }
+}
