@@ -34,22 +34,39 @@ There's technically no difference between a foreground vs. background texture, a
 
 The best textures are transparent PNG images that align with your depth map. For example, the Frog Demo depth map and texture sit perfectly on top of one another, and the background of the frog is transparent.
 
-The [template]({% link depth-map.md %}#software) files I provided have built-in functionality to convert whatever 3D model you're using into a color-rendered image, provided that the model includes its own textures. 
+The [template]({% link docs/tutorial/depth-map.md %}#software) files I provided have built-in functionality to convert whatever 3D model you're using into a color-rendered image, provided that the model includes its own textures. 
 
 ![]({{ '/assets/images/diagram6.png' | relative_url }}){: width="20%" .float-left .mr-4 .mb-6 }
 
 {: .note }
 If you're following along with the Frog Demo, un-toggle the `Switch` checkbox in the `Nodes` window at the bottom of the screen, press `Z` then `R` to preview the full-color textured render, then use `F12` to render the texture. You should get an image similar to the example one at the top of this page.
 
-### Handling Texture Overlapping
+### Subtle Textures
 {: style="clear: both;" }
 
-### Subtle Textures
+Sometimes, you may not want your 3D object to be so conspicuous, but you may still want to include subtle texture hints for the viewer, like outlines, animal eyes, or ambient edge shadows/highlights. In that case, you can use your graphic design software of choice to create a more subtle texture.
+
+Here's an example:
+
+![]({{ '/assets/images/tutorial_frog_texture_2.png' | relative_url }}){: width="50%" }
+
+As you can see, I've replaced the shape of the frog with a green paisley pattern and kept the eye detail. 
 
 ### Outlines
 
+One popular way many stereogram artists subtly make their object stand out more from the background without making it too obvious is by using outlines. If you look closely, you can see that I've added a slight green outline to the frog.
+
 ## Background Tile
+
+![]({{ '/assets/images/bgtile1.jpg' | relative_url }}){: width="30%" .float-right .ml-4 .mb-8}
 
 For an MTS, if your texture has transparency, you will probably want a background pattern that will sit behind your primary texture and fill in the gaps and empty space.
 
 If you're making a classic, unmapped stereogram, this background tile will form the texture of your entire stereogram, including both foreground and background. 
+
+Similarly to the foreground texture, the background tile can be anything. In the case of making [subtle textures]({% link docs/tutorial/texture.md %}#subtle-textures), you can make your background tile and foreground texture to use very similar colors, so that they blend in with one another.
+
+Here is the paisley pattern I used for the Frog that I will use for the background as well:
+
+<p></p>
+{: style="clear: both;" }
