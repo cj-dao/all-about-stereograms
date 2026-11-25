@@ -30,7 +30,7 @@ Any art software, Photoshop-like tool, MS Paint, or even a photo of your neighbo
 
 ![]({{ '/assets/images/gif1.gif' | relative_url }}){: width="40%" .float-right .mr-4 }
 
-There's technically no difference between a foreground vs. background texture, and you can use a single image for both. However, especially for mapped-texture stereograms, it's advisable to make the foreground a different pattern from the background to make it stand out more. Additionally, because textures will overlap with themselves (see [theory]({% link theory.md %})), textures should involve only small parts of the image and not span the entire width of the stereogram.
+There's technically no difference between a foreground vs. background texture, and you can use a single image for both. However, especially for mapped-texture stereograms, it's advisable to make the foreground a different pattern from the background to make it stand out more. Additionally, because textures will overlap with themselves (see [theory]({% link docs/theory.md %})), textures should involve only small parts of the image and not span the entire width of the stereogram.
 
 The best textures are transparent PNG images that align with your depth map. For example, the Frog Demo depth map and texture sit perfectly on top of one another, and the background of the frog is transparent.
 
