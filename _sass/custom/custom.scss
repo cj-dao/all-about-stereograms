@@ -1,0 +1,14 @@
+// Forces callout containers to establish a Block Formatting Context
+// so their borders/backgrounds sit beside floated elements rather than behind them.
+p.note,
+blockquote.note,
+p.warning,
+blockquote.warning,
+p.important,
+blockquote.important,
+p.highlight,
+blockquote.highlight,
+p.new,
+blockquote.new {
+  display: flow-root;
+}
